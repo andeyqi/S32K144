@@ -37,8 +37,8 @@ int main(int argc,char ** argv)
         PINS_DRV_WritePin(PTC, 17,0);
         PINS_DRV_WritePin(PTD, 17,0);
         delay();
-        uint8_t buff[10] = {'h','\r','\n'};
-        LPUART_DRV_SendData(0,buff,3);
+        uint8_t buff[10] = {'h','e','l','l','o','\r','\n'};
+        LPUART_DRV_SendData(0,buff,7);
     }
     return 0;
 }
