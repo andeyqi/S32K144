@@ -15,7 +15,7 @@ export AS LD CC CPP AR NM
 export STRIP OBJCOPY OBJDUMP
 
 CFLAGS := -Wall -Os  -DCPU_S32K144LFT0MLLT -std=gnu99
-CFLAGS += -I $(shell pwd)/sdk/device/  -I $(shell pwd)/sdk/driver/inc/
+CFLAGS += -I $(shell pwd)/sdk/device/  -I $(shell pwd)/sdk/driver/inc/ -I $(shell pwd)/user/Generated_Code/
 CFLAGS += -mcpu=cortex-m4 -mthumb 
 CFLAGS += -ffunction-sections -fdata-sections
 CFLAGS += -g
