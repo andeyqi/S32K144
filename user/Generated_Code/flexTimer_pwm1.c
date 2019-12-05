@@ -90,7 +90,7 @@ ftm_independent_ch_param_t flexTimer_pwm1_IndependentChannelsConfig[1] =
     {
         0U, /* hwChannelId */
         FTM_POLARITY_HIGH, /* Edge mode */
-        1000U, /* Duty cycle percent 0-0x8000 */
+        16384U, /* Duty cycle percent 0-0x8000 */
         false, /* External Trigger */
         FTM_HIGH_TRUE_PULSE, /* The selection of the channel (n) mode */
         false, /* Enabled/disabled the channel (n+1) output */
@@ -118,8 +118,8 @@ ftm_independent_ch_param_t flexTimer_pwm1_IndependentChannelsConfig[1] =
 ftm_user_config_t  flexTimer_pwm1_InitConfig =
 {
     {
-        true,   /* Software trigger state */
-        false,  /* Hardware trigger 1 state */
+        false,   /* Software trigger state */
+        true,  /* Hardware trigger 1 state */
         false,  /* Hardware trigger 2 state */
         false,  /* Hardware trigger 3 state */
         false, /* Max loading point state */

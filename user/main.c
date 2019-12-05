@@ -46,9 +46,10 @@ int main(int argc,char ** argv)
         PINS_DRV_WritePin(PTC, 17,0);
         PINS_DRV_WritePin(PTD, 17,0);
         delay();
-        uint8_t buff[10] = {'h','e','l','l','o','\r','\n'};
-        LPUART_DRV_SendData(0,buff,7);
+        //uint8_t buff[10] = {'h','e','l','l','o','\r','\n'};
+        //LPUART_DRV_SendData(0,buff,7);
         //FTM_DRV_UpdatePwmChannel(2, 0U, FTM_PWM_UPDATE_IN_DUTY_CYCLE, duty ,0U, true);
+        printf("hello world.\r\n");
         duty = (duty + 0x1000)%0x9000;
         delay();
         delay();
