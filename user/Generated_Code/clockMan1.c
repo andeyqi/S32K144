@@ -63,6 +63,13 @@ peripheral_clock_config_t peripheralClockConfig0[NUM_OF_PERIPHERAL_CLOCKS_0] = {
         .divider          = DIVIDE_BY_ONE,
     },
     {
+        .clockName        = FTM2_CLK,
+        .clkGate          = true,
+        .clkSrc           = CLK_SRC_SIRC_DIV1,
+        .frac             = MULTIPLY_BY_ONE,
+        .divider          = DIVIDE_BY_ONE,
+    },
+    {
         .clockName        = LPUART0_CLK,
         .clkGate          = true,
         .clkSrc           = CLK_SRC_SIRC_DIV1,

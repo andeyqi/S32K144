@@ -61,6 +61,7 @@
 #include "interrupt_manager.h"
 #include "edma_driver.h"
 #include "lpuart_driver.h"
+#include "ftm_pwm_driver.h"
 #include "system_S32K144.h"
 
 /* Including needed modules to compile this module/procedure */
@@ -68,6 +69,7 @@
 #include "clockMan1.h"
 #include "dmaController1.h"
 #include "lpuart1.h"
+#include "flexTimer_pwm1.h"
 
 #ifdef __cplusplus
 extern "C" {

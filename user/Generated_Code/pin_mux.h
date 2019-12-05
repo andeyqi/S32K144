@@ -164,8 +164,8 @@
 **                  External Clock 2                       : <Automatic>
 **                  Quadrature Decoder Phase A Input       : <Automatic>
 **                  Quadrature Decoder Phase B Input       : <Automatic>
-**                  Channel 0                              : <Automatic>
-**                  Direction                              : <Automatic>
+**                  Channel 0                              : PTD0
+**                  Direction                              : Output
 **                  Channel 1                              : <Automatic>
 **                  Direction                              : <Automatic>
 **                  Channel 2                              : <Automatic>
