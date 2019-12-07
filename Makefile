@@ -15,7 +15,7 @@ export AS LD CC CPP AR NM
 export STRIP OBJCOPY OBJDUMP
 
 CFLAGS := -Wall -Os  -DCPU_S32K144LFT0MLLT -std=gnu99
-CFLAGS += -I $(shell pwd)/sdk/device/  -I $(shell pwd)/sdk/driver/inc/ -I $(shell pwd)/user/Generated_Code/ -I $(shell pwd)/rtos/osif/
+CFLAGS += -I $(shell pwd)/sdk/device/  -I $(shell pwd)/sdk/driver/inc/ -I $(shell pwd)/user/Generated_Code/ -I $(shell pwd)/rtos/osif/  -I $(shell pwd)/lib/easyflash/inc
 CFLAGS += -mcpu=cortex-m4 -mthumb 
 CFLAGS += -ffunction-sections -fdata-sections
 CFLAGS += -g
@@ -35,6 +35,7 @@ TARGET := s32k144.elf
 obj-y += sdk/
 obj-y += user/
 obj-y += rtos/
+obj-y += lib/
 
 all : 
 	make -C ./ -f $(TOPDIR)/Makefile.build
